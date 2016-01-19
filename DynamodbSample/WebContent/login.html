@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+</head>
+<body ng-app="myApp">
+<div class="container" ng-controller="">
+    <form class="form-signin" method="post" action="/login">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus=""
+               ng-model="email">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required=""
+               ng-model="password">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
+<script src=js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.js"></script>
+</body>
+</html>
